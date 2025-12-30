@@ -25,7 +25,7 @@ export const tempoTestnet = defineChain({
 
 export const config = getDefaultConfig({
   appName: 'Bebas Tempo DEX',
-  projectId: '0febd1564ab8cf5569f57b45530ce88e', // Project ID lu
+  projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '7d052131912a3ab4fa39ff3673dc8215',
   chains: [tempoTestnet],
   ssr: true,
 })
